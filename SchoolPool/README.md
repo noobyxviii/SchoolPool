@@ -1,2 +1,2 @@
-# UrbanUplift
-High School Hacks Project!
+# SchoolPool
+American Allegiance of Education Project!
