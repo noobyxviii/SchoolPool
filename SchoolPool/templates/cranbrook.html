@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <title>SchoolPool - Cranbrook</title>
+  <style>
+    body {
+      background: #FDFCFC;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter";
+      scroll-behavior: smooth;
+      height: 950px;
+    }
+    header {
+      position: absolute;
+      left: 10%;
+      top: 50px;
+      height: 35px;
+      width: 80%;
+      background: transparent;
+      display: flex;
+      align-items: center;
+    }
+    #main-content {
+      position: relative;
+      top: 175px;
+      left: 10%;
+      width: 80%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+    #main-content > form > #search-bar {
+      position: absolute;
+      top: 0px;
+      width: calc(100% - 50px);
+      height: 50px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 30px 1px #CBCBCB;
+      border-radius: 10px;
+      border: none;
+      color: black;
+      padding: 0 25px 0 25px;
+    }
+    #drivers-content {
+      position: absolute;
+      left: 10%;
+      margin-top: 200px;
+      height: 500px;
+      width: 80%;
+    }
+    .driver-card {
+      margin-top: 30px;
+      width: 100%;
+      height: 275px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 0px 30px 1px #CBCBCB;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img style="height: 35px;" src="./static/logo.svg" />
+    <img style="position: absolute; right: 0; height: 12.5px;" src="./static/menu.svg" />
+  </header>
+  <div id="main-content">
+    <form action="/riverview" method="GET">
+    <input type="text" id="search-bar" placeholder="School or Neighborhood" value="cranbrook"/>
+    </form>
+    <img style="position: absolute; right: 15px;  top: 17.83px; width: 15px;" src="./static/arrow-right.svg" />
+  </div>
+  <div id="drivers-content">
+    <p style="font-weight: 600; font-size: 15px;">Search Results</p>
+    <div class="driver-card">
+      <img style="position: absolute; margin-left: 25px; margin-top: 25px; width: 75px; height: 75px; border-radius: 5px;" src="static/headshot1.png">
+      <p style="position: absolute; margin-left: 125px; margin-top: 40px; font-size: 15px;">Macy Schmidt</p>
+      <p style="position: absolute; margin-left: 125px; margin-top: 62.5px; font-size: 15px; color: gray; font-weight: 200;">Cranbrook Elementary School</p>
+      <p style="position: absolute; margin-left: 25px; width: calc(100% - 50px); margin-top: 112.5px; font-size: 15px; color: gray; font-weight: 200;">Hello! I'm Macy, a parent to a 2nd grader at Cranbrook Elementary. I would love to help give your children a ride to school if you are located in the Riverview neighborhood.</p>
+      <div style="position: absolute; left: 50%; transform: translateX(-50%); margin-top: 225px; width: 125px; height: 35px; line-height: 35px; border-radius: 5px; background: black; color: white; align-items: center; text-align: center; justify-content: center; font-weight: 100; font-size: 12px; cursor: pointer;">Contact</div>
+    </div>
+    <div class="driver-card">
+      <img style="position: absolute; margin-left: 25px; margin-top: 25px; width: 75px; height: 75px; border-radius: 5px;" src="static/headshot3.png">
+      <p style="position: absolute; margin-left: 125px; margin-top: 40px; font-size: 15px;">Sarah Cones</p>
+      <p style="position: absolute; margin-left: 125px; margin-top: 62.5px; font-size: 15px; color: gray; font-weight: 200;">Cranbrook Elementary School</p>
+      <p style="position: absolute; margin-left: 25px; width: calc(100% - 50px); margin-top: 112.5px; font-size: 15px; color: gray; font-weight: 200;">Hey y'all! I'm Sarah, a parent to a 3rd grader at Cranbrook Elementary. I would love to help give your children a ride to school if you are located in the Cranbrook neighborhood.</p>
+      <div style="position: absolute; left: 50%; transform: translateX(-50%); margin-top: 225px; width: 125px; height: 35px; line-height: 35px; border-radius: 5px; background: black; color: white; align-items: center; text-align: center; justify-content: center; font-weight: 100; font-size: 12px; cursor: pointer;">Contact</div>
+    </div>
+  </div>
+</body>
+</html>

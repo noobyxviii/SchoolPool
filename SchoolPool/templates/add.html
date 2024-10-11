@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <title>SchoolPool - Riverview</title>
+  <style>
+    body {
+      background: #FDFCFC;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter";
+      scroll-behavior: smooth;
+    }
+    header {
+      position: absolute;
+      left: 10%;
+      top: 50px;
+      height: 35px;
+      width: 80%;
+      background: transparent;
+      display: flex;
+      align-items: center;
+    }
+    #main-content {
+      position: relative;
+      top: 100px;
+      left: 10%;
+      width: 80%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+    #main-content > form > #search-bar {
+      width: calc(100% - 50px);
+      height: 50px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 30px 1px #CBCBCB;
+      border-radius: 10px;
+      border: none;
+      color: black;
+      padding: 0 25px 0 25px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/"><img style="height: 35px;" src="./static/logo.svg" /></a>
+    <img style="position: absolute; right: 0; height: 12.5px;" src="./static/menu.svg" />
+  </header>
+  <div id="main-content">
+    <h1>Add Contact</h1>
+    <form style="display: flex; flex-direction: column; gap: 15px;" action="/cranbrook" method="GET">
+    <input type="text" id="search-bar" placeholder="Name" />
+    <input type="text" id="search-bar" placeholder="School"/>
+    <input type="text" id="search-bar" placeholder="Neighborhood"/>
+    <input style="padding: 0 25px 50px 25px;"type="text" id="search-bar" placeholder="Description"/>
+    </form>
+    <div style="margin-left: 10%; margin-top: 25px; width: 80%; height: 50px; line-height: 50px; background-color: #000; color: white; text-align: center; justify-content: center; align-items: center; border-radius: 15px; font-size: 12px;">
+        Add Contact
+    </div>
+  </div>
+</body>
+</html>
